@@ -1,0 +1,19 @@
+<a href="/">Home</a>
+
+@using LonnysLemons.Models;
+
+<h1>Current Car Listings</h1>
+
+@if (Model.Count == 0) 
+{
+  <p>There are no cars at this time</p>
+}
+
+<ul>
+  @foreach (Car car in Model)
+  {
+    <li>Make Model: @car.MakeModel Price: @car.Price Miles: @car.Miles</li>
+  }
+</ul>
+
+<a href="/cars/new">Add a new car.</a>
