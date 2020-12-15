@@ -1,13 +1,13 @@
-# _TITLE_ --read this thoroughly to see if it applies--
+# _Lonny's Lemons Car Dealership_
 
-#### _DESCRIBE - PRACTICE FOR EPICODUS??_ 
-#### _DATE 11.16.2020_
+#### _PRACTICE FOR EPICODUS_ 
+#### _DATE 12.15.2020_
 
 #### By _**Tawnee Harris and Kaila Sprague McRae**_
 
 ## Description
 
-This application... ADD INFO
+This application will list Cars and allow users to add new Cars.
 
 ## Setup/Installation Requirements
 
@@ -21,6 +21,7 @@ Open by Downloading or Cloning
 * Or clone the repository
 
 Setup Instructions
+* 
 
 
 ## Known Bugs
