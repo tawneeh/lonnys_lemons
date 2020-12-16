@@ -7,8 +7,8 @@ namespace LonnysLemons.Models
     public string MakeModel { get; set; }
     public int Price { get; set; }
     public int Miles { get; set; }
-    // public int MaxPrice { get; set; }
-    public static List<Car> CarsMatchingSearch = new List<Car>(0);
+    public static int MaxPrice { get; set; }
+    public static List<Car> CarsMatchingSearch = new List<Car> {};
 
     private static List<Car> _instances = new List<Car> {};
 
@@ -17,6 +17,7 @@ namespace LonnysLemons.Models
       MakeModel = makeModel;
       Price = price;
       Miles = miles;
+      MaxPrice = -1;
       _instances.Add(this);
     }
 
@@ -26,15 +27,15 @@ namespace LonnysLemons.Models
     }
     public static List<Car> WorthBuying(int maxPrice)
     {
-      // MaxPrice = maxPrice;
-      foreach (Car car in Cars)
+      // MaxPrice = maxPrice - breaks Buyer click here
+      foreach (Car car in _instances)
       {
-        if (Price <= maxPrice)
+        if (car.Price <= maxPrice)
         {
-          CarsMatchingSearch.Add(this);
+          CarsMatchingSearch.Add(car);
         }
-        return CarsMatchingSearch;
       }
+      return CarsMatchingSearch; // not being generated because of lines 30 and 20
     }
 
   }
