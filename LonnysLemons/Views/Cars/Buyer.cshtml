@@ -16,18 +16,13 @@
 }
 
 <ul>
-  @if (Model.Car.MaxPrice >= 0) {
-    foreach (Car car in Model)
+  @if (Car.MaxPrice >= 0) {
+    foreach (Car car in Model.CarsMatchingSearch)
     {
-      if (car.WorthBuying(car.MaxPrice))
-      {
-        CarsMatchingSearch.Add(car);
-      }
-
       <li>Make Model: @car.MakeModel Price: @car.Price Miles: @car.Miles</li>
     }
   } else {
-    foroeach (Car car in Model)
+    foreach (Car car in Model)
     {
       <li>Make Model: @car.MakeModel Price: @car.Price Miles: @car.Miles</li>
     }
