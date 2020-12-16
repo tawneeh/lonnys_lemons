@@ -33,10 +33,10 @@ namespace LonnysLemons.Controllers
         return View(allCars);
       }
 
-      [HttpPost("/buy")] // CarsMatchingSearh (maxPrice)
+      [HttpPost("/buy")] // CarsMatchingSearh list based on maxPrice
       public ActionResult Create(int maxPrice)
       {
-        
+        Car.WorthBuying(maxPrice);
         return RedirectToAction("Index");
       }
     }
