@@ -16,13 +16,9 @@ Software Requirements
 * A code editor; I prefer VSCode
 
 Open by Downloading or Cloning
-* Navigate to <GITHUB REPO URL>
+* Navigate to <https://github.com/tawneeh/lonnys_lemons.git>
 * Download this repository to your computer by clicking the green Code button and 'Download Zip'
 * Or clone the repository
-
-Setup Instructions
-* 
-
 
 ## Known Bugs
 
@@ -31,9 +27,7 @@ This application has no known bugs.
 ## Support and contact details
 
 * Please feel free to reach out to Tawnee anytime at <tawneeh@icloud.com>
-* Or Kaila at 
-
-Co-authored-by: Kaila Sprague McRae <kaila.sprague@icloud.com>
+* Or Kaila at <kaila.sprague@icloud.com>
 
 
 ## Technologies Used
